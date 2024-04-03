@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc-body">
+            <div id="display-div">
+                <input type="text" name="display" id="display" readonly>
+            </div>
+            <div class="button-area">
+                <div id="r1">
+                    <div>
+                        <input type="button" class="blue-btn" onclick="clr()" value="AC">
+                    </div>
+                    <div>
+                        <input type="button" class="blue-btn" onclick="del()" value="DEL">
+                    </div>
+                    <div>
+                        <input type="button" class="blue-btn" onclick="appendText('-')" value="+/-">
+                    </div>
+                    <div>
+                        <input type="button" class="blue-btn" onclick="appendText('/')" value="/">
+                    </div>
+                </div>
+                <div id="r2">
+                    <div>
+                        <input type="button" onclick="appendText('7')" value="7" class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" onclick="appendText('8')" value="8" class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" onclick="appendText('9')" value="9" class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" class="blue-btn" onclick="appendText('*')" value="*">
+                    </div>
+                </div>
+                <div id="r3">
+                    <div>
+                        <input type="button" onclick="appendText('4')" value="4" class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" onclick="appendText('5')" value="5" class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" onclick="appendText('6')" value="6" class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" class="blue-btn" onclick="appendText('-')" value="-">
+                    </div>
+                </div>
+                <div id="r4">
+                    <div>
+                        <input type="button" onclick="appendText('1')" value="1" class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" onclick="appendText('2')" value="2" class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" onclick="appendText('3')" value="3" class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" class="blue-btn" onclick="appendText('+')" value="+">
+                    </div>
+                </div>
+                <div id="r5">
+                    <div>
+                        <input type="button" onclick="appendText('%')" value="%" class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" onclick="appendText('0')" value="0" class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" onclick="appendText('.')" value="." class="grey-btn">
+                    </div>
+                    <div>
+                        <input type="button" class="blue-btn" onclick="calculate()" value="=">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

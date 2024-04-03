@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background:linear-gradient(to bottom right ,rgb(17, 19, 21),rgb(181, 43, 43),green);
+   
+}
+
+.calc-body{
+    background-color: rgb(37, 34, 34);
+    height:80vh;
+    width:30%;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+#display-div{
+    height: 30%
+}
+
+#display-div input{
+    color: rgb(5, 0, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 30px;
+    height: 100px;
+    text-align: right;
+    padding: 5px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 0;
+    box-shadow: inset 10px 10px 10px rgb(66, 63, 63);
+    outline: 0;
+    width: 80%;
+    background-color: rgb(121, 114, 114);
+    font-size: 40px;
+}
+.button-area{
+    background-color: black;
+    height: 70%;
+    padding-top: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#r1,#r2,#r3,#r4,#r5{
+    display: flex;
+    justify-content: center;
+}
+
+.blue-btn{
+    color: black;
+    background: linear-gradient(to bottom,rgb(19, 228, 169),rgb(0, 149, 255));
+    background-color: white;
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    margin: 18px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: -2px -2px 2px 3px rgb(196, 189, 189);
+}
+
+.grey-btn{
+    color: white;
+    background-color: rgb(37, 34, 34);
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    margin: 18px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: -2px -2px 2px 3px rgb(196, 189, 189);
+}
+.blue-btn:hover{
+    box-shadow: -2px -2px 2px 0px rgb(196, 189, 189);
+    scale: 0.97;
+    filter: brightness(80%);
+}
+.grey-btn:hover{
+    box-shadow: -2px -2px 2px 0px rgb(196, 189, 189);
+    scale: 0.97;
+    filter: brightness(80%);
+}
