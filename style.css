@@ -39,17 +39,22 @@ body{
 .button-area{
     background-color: black;
     height: 70%;
-    padding-top: 20px;
+    padding-top: 30px;
     border-top-left-radius: 40px;
-    border-top-right-radius: 40px;    border-bottom-left-radius: 30px;
+    border-top-right-radius: 40px;   
+    border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
-
-#r1,#r2,#r3,#r4,#r5{
-    display: flex;
+#button-container{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(5,90px);
     justify-content: center;
 }
-
+#button-container >div{
+    align-items: center;
+    margin: auto;
+}
 .blue-btn{
     color: black;
     background: linear-gradient(to bottom,rgb(19, 228, 169),rgb(0, 149, 255));
@@ -59,7 +64,6 @@ body{
     width: 60px;
     height: 50px;
     text-align: center;
-    margin: 18px;
     border-radius: 6px;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
@@ -74,7 +78,6 @@ body{
     width: 60px;
     height: 50px;
     text-align: center;
-    margin: 18px;
     border-radius: 6px;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
